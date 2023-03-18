@@ -6,7 +6,7 @@ terraform {
       version = "~> 3.0"
     }
   }
-
+}
 
   resource "aws_kms_key" "mykey" {
   description             = "This key is used to encrypt bucket objects"
@@ -27,12 +27,5 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "example" {
     }
   }
 
- }
-
- # Provider Block
-provider "aws" {
-   region  = "us-east-1"
-   profile = "default"
- }
-
+ 
 
