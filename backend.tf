@@ -27,11 +27,6 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "example" {
     }
   }
 
-
-   lifecycle {
-   prevent_destroy = false
-  }
-
  }
 
  # Provider Block
