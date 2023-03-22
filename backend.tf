@@ -1,14 +1,4 @@
-terraform {
-  required_version = "~> 1.0" 
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 3.0"
-    }
-  }
-}
-
-  resource "aws_kms_key" "mykey" {
+resource "aws_kms_key" "mykey" {
   description             = "This key is used to encrypt bucket objects"
   deletion_window_in_days = 10
 }
